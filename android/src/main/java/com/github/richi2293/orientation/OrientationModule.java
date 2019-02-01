@@ -1,4 +1,4 @@
-package com.github.yamill.orientation;
+package com.github.richi2293.orientation;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;

@@ -1,4 +1,4 @@
-package com.github.yamill.orientation;
+package com.github.richi2293.orientation;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

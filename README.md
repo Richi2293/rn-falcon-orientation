@@ -1,12 +1,13 @@
 ## rn-falcon-orientation
-[![npm version](https://badge.fury.io/js/react-native-orientation.svg)](https://badge.fury.io/js/react-native-orientation)
+[![npm version](https://badge.fury.io/js/rn-falcon-orientation.svg)](https://badge.fury.io/js/rn-falcon-orientation)
 
-Listen to device orientation changes in React Native applications and programmatically set preferred orientation on a per screen basis. Works on both Android and iOS.
+Listen to device orientation changes in React Native applications and programmatically set preferred orientation on a per screen basis. Works on both Android and iOS. <br/>
+This component is based on this no longer followed frequently: <a href="https://github.com/yamill/react-native-orientation">react-native-orientation</a>
 
 ## Installing
 
 ```
-npm install react-native-orientation --save
+npm install rn-falcon-orientation --save
 ```
 
 ## Linking Native Dependencies
@@ -14,7 +15,7 @@ npm install react-native-orientation --save
 ### Automatic Linking
 
 ```
-react-native link react-native-orientation
+react-native link rn-falcon-orientation
 ```
 
 Please note that you **still need to manually configure** a couple files even when using automatic linking. Please see the ['Configuration'](#configuration) section below. You will also **need to restart your simulator** before the package will work properly.
@@ -23,9 +24,9 @@ Please note that you **still need to manually configure** a couple files even wh
 
 **iOS**
 
-1. Add `node_modules/react-native-orientation/iOS/RCTOrientation.xcodeproj` to your xcode project, usually under the `Libraries` group
+1. Add `node_modules/rn-falcon-orientation/iOS/RCTOrientation.xcodeproj` to your xcode project, usually under the `Libraries` group
 2. Add `libRCTOrientation.a` (from `Products` under `RCTOrientation.xcodeproj`) to build target's `Linked Frameworks and Libraries` list
-3. Add `$(SRCROOT)/node_modules/react-native-orientation/iOS/RCTOrientation/` to `Project Name` -> `Build Settings` -> `Header Search Paths`
+3. Add `$(SRCROOT)/node_modules/rn-falcon-orientation/iOS/RCTOrientation/` to `Project Name` -> `Build Settings` -> `Header Search Paths`
 
 
 **Android**
@@ -34,8 +35,8 @@ Please note that you **still need to manually configure** a couple files even wh
 
     ```
     ...
-    include ':react-native-orientation', ':app'
-    project(':react-native-orientation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-orientation/android')
+    include ':rn-falcon-orientation', ':app'
+    project(':rn-falcon-orientation').projectDir = new File(rootProject.projectDir, '../node_modules/rn-falcon-orientation/android')
     ```
 
 2. In `android/app/build.gradle`
@@ -44,14 +45,14 @@ Please note that you **still need to manually configure** a couple files even wh
     ...
     dependencies {
         ...
-        compile project(':react-native-orientation')
+        compile project(':rn-falcon-orientation')
     }
     ```
 
 3. Register module in `MainApplication.java`
 
     ```java
-    import com.github.yamill.orientation.OrientationPackage;  // <--- import
+    import com.github.richi2293.orientation.OrientationPackage;  // <--- import
 
     public class MainApplication extends Application implements ReactApplication {
       ......
@@ -115,9 +116,9 @@ Implement `onConfigurationChanged` method in `MainActivity.java`
 
 ## Usage
 
-To use the `react-native-orientation` package in your codebase, you should use the Orientation module:
+To use the `rn-falcon-orientation` package in your codebase, you should use the Orientation module:
 ```javascript
-import Orientation from 'react-native-orientation';
+import Orientation from 'rn-falcon-orientation';
 ```
 
 ```javascript
