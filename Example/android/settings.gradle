@@ -1,0 +1,5 @@
+rootProject.name = 'Example'
+include ':rn-falcon-orientation'
+project(':rn-falcon-orientation').projectDir = new File(rootProject.projectDir, '../node_modules/rn-falcon-orientation/android')
+
+include ':app'

@@ -1,0 +1,36 @@
+{
+  "name": "rn-falcon-orientation",
+  "version": "3.1.4",
+  "description": "Listen to device orientation changes in React Native applications and programmatically set preferred orientations on a per screen basis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "orientation",
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.50"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Richi2293/rn-falcon-orientation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Richi2293/rn-falcon-orientation/issues"
+  },
+  "homepage": "https://github.com/Richi2293/rn-falcon-orientation#readme",
+  "rnpm": {
+    "android": {
+      "packageInstance": "new OrientationPackage()"
+    },
+    "ios": {
+      "project": "iOS/RCTOrientation.xcodeproj"
+    }
+  }
+}
