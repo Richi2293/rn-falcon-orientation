@@ -13,7 +13,7 @@
     "android"
   ],
   "peerDependencies": {
-    "react-native": ">=0.40"
+    "react-native": ">=0.50"
   },
   "author": "",
   "license": "ISC",
